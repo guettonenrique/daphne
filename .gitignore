@@ -1,0 +1,50 @@
+# Xcode
+#
+# User settings
+xcuserdata/
+
+# Build generated
+build/
+DerivedData/
+
+# Xcode temporary and state files
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Obj-C / Swift specific
+*.hmap
+
+# App packaging & symbols
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+.build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Quality & Linters
+.swiftlint-cache
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor & Tooling
+.vscode/
+.idea/
+*.swp
+*~
