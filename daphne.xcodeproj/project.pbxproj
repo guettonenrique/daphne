@@ -6,8 +6,13 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9F8128D3306220A7004AA103 /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 9F8128D2306220A7004AA103 /* AGENTS.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9F8128C430621B3D004AA103 /* daphne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daphne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8128D2306220A7004AA103 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -31,6 +36,7 @@
 			isa = PBXGroup;
 			children = (
 				9F8128C630621B3D004AA103 /* daphne */,
+				9F8128D2306220A7004AA103 /* AGENTS.md */,
 				9F8128C530621B3D004AA103 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +108,7 @@
 		9F8128C230621B3D004AA103 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				9F8128D3306220A7004AA103 /* AGENTS.md in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
