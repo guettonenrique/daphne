@@ -29,7 +29,11 @@ struct ContentView: View {
             editorView
         }
         .navigationSplitViewStyle(.balanced)
+        #if os(macOS)
         .toolbarBackground(DaphneTheme.windowBackground, for: .windowToolbar)
+        #else
+        .toolbarBackground(DaphneTheme.windowBackground, for: .navigationBar)
+        #endif
         .background(DaphneTheme.windowBackground)
         .onAppear {
             selectedNoteID = notes.first?.id
@@ -38,7 +42,7 @@ struct ContentView: View {
 
     // MARK: - 2. Notes Sidebar (Blocks List)
     private var notesSidebarView: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: 4) {
             // Search Bar & New Note Button
             HStack(spacing: 8) {
                 Image(systemName: "magnifyingglass")
@@ -71,7 +75,7 @@ struct ContentView: View {
                 .help("New Note")
             }
             .padding(.horizontal, 14)
-            .padding(.vertical, 6)
+            .padding(.vertical, 2)
 
             // Blocks List
             ScrollView {
@@ -120,6 +124,7 @@ struct ContentView: View {
                         .buttonStyle(.plain)
                     }
                 }
+                .padding(.top, 1)
                 .padding(.horizontal, 12)
                 .padding(.bottom, 12)
             }
@@ -169,4 +174,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
